@@ -1074,7 +1074,7 @@ img {
 }
 
 /* CAROLS */
-.carolsnBanner {
+.foodanddrinksBanner {
   padding: 5rem 0;
 }
 .carolsBanner__wrapper {
@@ -1163,6 +1163,108 @@ img {
     grid-template-columns: 1fr;
     gap: unset;
     margin-top: 5rem;
+  }
+}
+
+/* FOODS AND DRINKS */
+.foodanddrinksBanner {
+  padding: 5rem 0;
+}
+.foodanddrinksBanner__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.foodanddrinksBanner h1 {
+  font-size: 8rem;
+  color: var(--clr-primary);
+  letter-spacing: -0.5rem;
+  text-align: center;
+}
+.foodanddrinksBanner h5 {
+  color: var(--clr-secondary);
+  font-style: italic;
+  font-weight: 200;
+  font-size: 2rem;
+  font-family: var(--font--secondary);
+  max-width: 48rem;
+  text-align: center;
+}
+.foodanddrinksBanner img {
+  width: 40%;
+  margin-bottom: 5rem;
+}
+.bannerfoodanddrinks__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.bannerfoodanddrinks__cards {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+.bannerfoodanddrinks h3 {
+  font-size: 5rem;
+  font-family: var(--font--secondary);
+  color: var(--clr-primary);
+  line-height: 5rem;
+  max-width: 50rem;
+  padding: 1.3rem 0;
+}
+.foodanddrinks__cards {
+  margin-top: 2rem;
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+.cards img {
+  border-bottom: 4px solid var(--clr-secondary);
+}
+
+/* FOODS AND DRINKS MOBILE */
+@media screen and (max-width: 520px) {
+  .foodanddrinksBanner {
+    padding: 5rem 0;
+    height: 30rem;
+    margin-bottom: 10rem;
+  }
+  .foodanddrinksBanner__wrapper h1 {
+    font-size: 3.8rem;
+    letter-spacing: -0.25rem;
+    margin-top: -5rem;
+  }
+  .foodanddrinksBanner__wrapper h5 {
+    font-size: 2rem;
+  }
+  .foodanddrinksBanner__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .foodanddrinksBanner__wrapper img {
+    margin-top: 4rem;
+    width: 40rem;
+    display: flex;
+    justify-content: center;
+  }
+  .foodanddrinks {
+    padding: unset;
+    margin-top: unset;
+  }
+  .bannerfoodanddrinks__cards {
+    grid-template-columns: 1fr;
+    gap:unset;
+    margin-top: 10rem;
   }
 }
 
